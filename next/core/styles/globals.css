@@ -1,5 +1,10 @@
-html,
-body {
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,700&display=swap');
 
+html,
+body, p {
+  font-family: 'Nunito Sans', sans-serif!important;
 }
 
+p{
+  font-size: 0.875rem
+}
