@@ -1,3 +1,5 @@
+from decimal import Decimal
+
 from django.conf import settings
 from django.db import models
 from django.db.models.fields import related
@@ -125,7 +127,7 @@ class Product(models.Model):
 
     @property
     def price_gross(self):
-        return float(self.reqular_price) * (1 + self.tax_values[self.tax_rate])
+        return self.reqular_price * Decimal((1 + self.tax_values[self.tax_rate]))
 
     def __str__(self):
         return self.title
