@@ -106,7 +106,7 @@ function Product({post, categories}) {
 
 export async function getStaticPaths(){
   return{
-    paths: [{params: { slug: "boots-3" } }],
+    paths: [{params: { slug: "jajka-0A" } }],
     fallback: true,
   };
 }
