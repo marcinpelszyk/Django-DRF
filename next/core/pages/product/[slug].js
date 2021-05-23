@@ -77,7 +77,7 @@ function Product({post, categories}) {
             </Grid>
           </Hidden>
           <Grid item xs={12} sm={6}>
-            <Paper className={classes.paperImage} elevation={0}>
+            <Paper className={classes.paperImage} elevation={0}> 
               <img
                 src={post.product_image[0].image}
                 alt={post.product_image[0].alt_text}
